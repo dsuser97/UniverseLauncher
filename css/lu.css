@@ -264,6 +264,11 @@ ul.nav>li>.button{
 	text-decoration: none;
 }
 
+#menusizer{
+	width:30px;
+    opacity:0.5;
+}
+
 ul.nav>li>.title{
 	text-decoration: underline;
 	color: #000;
@@ -286,12 +291,59 @@ ul.nav>li:not(:last-child){
 	left: 0;
 	top: 0;
 	bottom: 2em;
-	width: 200px;
+	max-width: 175px;
+    min-width:  30px;
+    width: 10%;
 	overflow: auto;
 }
 
-.menu>*{
-	width: 175px;
+.minimizedmenu{
+    width:30px; 
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@media screen and (max-device-width : 1080px){ /*make text invisible*/
+    .menu{
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    #menusizer{
+        opacity: 0;
+    }
+}
+ul.nav>li>.button{
+        background-size: contain;
+        background-repeat: no-repeat;
+        text-align: right;
+    }
+.dashboard-button{
+        background-image: url('../img/dashboard.png');
+    }
+.forums-button{
+        background-image: url('../img/forums.png');
+    }
+.account-button{
+        background-image: url('../img/account.png');
+    }
+.logout-button{
+        background-image: url('../img/logout.png');
+    }
+.character-button{
+        background-image: url('../img/character.png');
+    }
+.mail-button{
+        background-image: url('../img/mail.png');
+    }
+.help-button{
+        background-image: url('../img/help.png');
+    }
+#menusizer{
+    text-indent: 0%;
+    white-space: normal;
+    overflow: visible;
 }
 
 .menu .logo{
@@ -525,4 +577,8 @@ a.pager{
 a.pager.current{
 	background-color: #F00;
 	color: #FFF !important;
+}
+
+.content-pane{
+    padding-left: 10% !important;
 }
