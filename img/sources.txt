@@ -2,3 +2,5 @@ nexus-force-logo.png - https://legouniversenews.wordpress.com/2013/10/26/happy-3
 WikiAV[...].png - http://legouniverse.wikia.com
 Mythran.jpg / Mythran2.jpg - Lego Message Boards
 bg.png - LU Game files
+
+all other pictures are part of the original Lego Universe Client
